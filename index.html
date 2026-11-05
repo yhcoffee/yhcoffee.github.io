@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f6f4">
+<title>YIHUI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Nixie+One&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f4;--ink:#171717;--border:#ddddda;--paper:#fff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:500 16px/1.4 'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1160px;margin:0 auto;padding:clamp(38px,8vh,86px) 24px 60px}
+h1{font:400 34px/1.2 'Nixie One',Georgia,serif;letter-spacing:.17em;margin:0 0 clamp(42px,8vh,76px)}
+nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+a{background:var(--paper);border:1px solid var(--border);border-radius:12px;min-height:180px;padding:24px;color:inherit;text-decoration:none;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;transition:background .15s,border-color .15s,transform .15s;outline-offset:4px}
+a:hover{background:#eeeef0;border-color:#a9a9a5;transform:translateY(-1px)}
+a:focus-visible{outline:3px solid var(--ink)}
+.name{font-size:clamp(19px,2.2vw,25px);font-weight:500;letter-spacing:-.02em}
+.arrow{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;font-size:23px;line-height:1;flex:none}
+a:hover .arrow{background:var(--ink);color:#fff;border-color:var(--ink)}
+@media(max-width:760px){nav{grid-template-columns:1fr}a{min-height:104px;align-items:center}.name{font-size:22px}}
+@media(max-width:520px){main{padding:38px 18px 42px}h1{font-size:27px;margin-bottom:44px}nav{gap:11px}a{min-height:94px;padding:18px 20px;border-radius:10px}.arrow{width:36px;height:36px;font-size:20px}}
+@media(prefers-reduced-motion:reduce){a{transition:none}a:hover{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>YIHUI</h1>
+<nav aria-label="YIHUI internal tools">
+<a href="https://yhcoffee.github.io/recipe/"><span class="name">Recipes</span><span class="arrow" aria-hidden="true">↗</span></a>
+<a href="https://yhcoffee.github.io/interview/"><span class="name">Interviews</span><span class="arrow" aria-hidden="true">↗</span></a>
+<a href="https://yhcoffee.github.io/q-team-cali/"><span class="name">Team Calibration</span><span class="arrow" aria-hidden="true">↗</span></a>
+</nav>
+</main>
+</body>
+</html>
